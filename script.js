@@ -16,8 +16,6 @@ window.onload = function () {
     var seconds = Math.floor((totalMilliseconds / 1000) % 60);
     var milliseconds = Math.floor((totalMilliseconds % 1000) / 10);
 
-    console.log(milliseconds)
-
     appendMinutes.innerHTML = (minutes < 10 ? "0" : "") + minutes;
     appendSeconds.innerHTML = (seconds < 10 ? "0" : "") + seconds;
     appendMiliseconds.innerHTML = (milliseconds < 10 ? "0" : "") + milliseconds;
